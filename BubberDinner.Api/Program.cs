@@ -1,5 +1,13 @@
+using BuberDinner.Aplication;
+using BuberDinner.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 {
+    builder.Services
+    .AddAplication()
+    .AddInfrastructure();
+
+    
     builder.Services.AddControllers();
 
 }
